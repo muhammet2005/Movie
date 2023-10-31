@@ -1,38 +1,51 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img{
+  width: 200px;
+}
+.nav a{
+  margin: 0 20px;
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.nav a:hover{
+  color: aqua;
+}
+.header button{
+  padding: 13px 40px;
+  background: yellow;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.popular h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.popular-movie{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie img{
+  margin: 50px 20px;
+  -webkit-box-shadow: -33px -28px 26px -7px rgba(193, 182, 96, 0.2);
+  -moz-box-shadow: -33px -28px 26px -7px rgba(193, 182, 96, 0.2);
+  box-shadow: -33px -28px 26px -7px rgba(193, 182, 96, 0.2);
 }
